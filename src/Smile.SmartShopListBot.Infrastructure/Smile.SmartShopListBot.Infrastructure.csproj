@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<ItemGroup>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+			<_Parameter1>
+				Smile.SmartShopListBot.Infrastructure.Tests,
+				PublicKey=0024000004800000940000000602000000240000525341310004000001000100690e5635079f9e25f775543212bc85d344c9df65e4e774942ea60c1bdd81f6fae892aa1d3bc90e8f7695d55b57ac9fb1365baef180378b2ae24644ac65a04a5a423f65e9d02768735e491526572eebb12eced809455095122681943608212d64d06cd956447b72b85a643f3a4e52b371e2d5192fe225e02f7fee30d1a6b8eba1
+			</_Parameter1>
+		</AssemblyAttribute>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+			<_Parameter1>
+				DynamicProxyGenAssembly2,
+				PublicKey=0024000004800000940000000602000000240000525341310004000001000100c547cac37abd99c8db225ef2f6c8a3602f3b3606cc9891605d02baa56104f4cfc0734aa39b93bf7852f7d9266654753cc297e7d2edfe0bac1cdcf9f717241550e0a7b191195b7667bb4f64bcb8e2121380fd1d9d46ad2d92d2d15605093924cceaf74c4861eff62abf69b9291ed0a340e113be11e6a7d3113e92484cf7045cc7
+			</_Parameter1>
+		</AssemblyAttribute>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="system_prompt.txt">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Autofac" Version="8.3.0" />
+		<PackageReference Include="Autofac.Extensions.DependencyInjection" Version="10.0.0" />
+		<PackageReference Include="FluentValidation" Version="12.0.0" />
+		<PackageReference Include="LLamaSharp" Version="0.24.0" />
+		<PackageReference Include="LLamaSharp.Backend.Cpu" Version="0.24.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.7" />
+		<PackageReference Include="Telegram.Bot" Version="22.6.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Smile.Mediator.Core\Smile.Mediator.Core.csproj" />
+		<ProjectReference Include="..\Smile.SmartShopListBot.Application\Smile.SmartShopListBot.Application.csproj" />
+	</ItemGroup>
+
+</Project>

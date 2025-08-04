@@ -1,0 +1,17 @@
+<Project>
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Company>Smile</Company>
+		<Authors>$(Company)</Authors>
+		<Copyright>Copyright © $(Company) 2025 - 2025</Copyright>
+		<SignAssembly>true</SignAssembly>
+		<AssemblyOriginatorKeyFile>../smart_shop_list_bot.snk</AssemblyOriginatorKeyFile>
+		<NoWarn>$(NoWarn);CS8002</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)'=='Release'">
+		<DebugType>none</DebugType>
+	</PropertyGroup>
+</Project>

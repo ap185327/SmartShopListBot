@@ -1,0 +1,8 @@
+﻿*.idea
+*.user
+*.vs
+*.vscode
+**/bin/
+**/obj/
+*appsettings.user.json
+/models

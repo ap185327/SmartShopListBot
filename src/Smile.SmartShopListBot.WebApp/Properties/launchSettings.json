@@ -1,0 +1,21 @@
+{
+  "profiles": {
+    "Kestrel.Development": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "development"
+      },
+      "externalUrlConfiguration": true,
+      "dotnetRunMessages": true
+    },
+    "Kestrel.Staging": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "staging"
+      },
+      "externalUrlConfiguration": true,
+      "dotnetRunMessages": true
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json"
+}

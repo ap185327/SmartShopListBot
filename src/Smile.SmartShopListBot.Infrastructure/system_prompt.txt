@@ -1,0 +1,15 @@
+﻿Extract shopping list items from the following text and output exactly one JSON array.
+Identify each shopping item as either:
+  1. a simple noun (e.g. "apple", "bananas", "яблоко", "бананы"),
+  2. a noun with adjective(s) (e.g. "red apple", "small bananas", "красное яблоко", "маленькие бананы"),
+  3. a noun with qualifier (e.g. "one apple, "few bananas", "couple of beers", "одно яблоко", "несколько бананов", "пара пива"),
+Ignore any verbs, requests or leading instructions.
+Items may be separated by commas, the words "and"/"or", or by line breaks.
+Preserve each item’s characters verbatim (no translation/transliteration).
+Correct typos and grammar errors for each item if there are any.
+The response must start with "[" and end immediately after the closing bracket "]".
+Do not output anything else — no notes, no explanations, no additional examples.
+
+Text: {input_text}
+
+Response:

@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="../Tests.props" />
+
+	<ItemGroup>
+		<Folder Include="UnitTests\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Smile.SmartShopListBot.Application\Smile.SmartShopListBot.Application.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Update="xunit.runner.visualstudio" Version="3.1.3" />
+	</ItemGroup>
+
+</Project>
